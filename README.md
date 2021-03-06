@@ -11,9 +11,9 @@ Source: https://cs61a.org/proj/hog_contest/
 
 ## Final Strategy
 The \textit{final_strategy} section of this project is an optional part, in which we are asked to come up with a best winning strategy. My strategy adapts the method of Monte Carlo Tree Search (MCTS), following these four steps: Selection, Expansion, Simulation, and Backpropagation. This method simulates all the possible children of the root (i.e. possible game states outcomes) and picks the best best child (next move) based on statistics modeled by the following equation:
-
-$$UCT(vi, v) = Q(vi)/N(vi) + c * sqrt(log(Nv)/N(vi))$$
-
+```math
+UCT(vi, v) = Q(vi)/N(vi) + c * sqrt(log(Nv)/N(vi))
+```
 where the c parameter used in this code is sqrt(2) = 1.4. 
 
 ## Acknowledgement:
